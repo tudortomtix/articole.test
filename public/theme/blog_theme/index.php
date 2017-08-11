@@ -22,11 +22,13 @@ session_start();
           Useri
         </a>
       </li>
+      <!--
       <li>
         <a href="index.php?c=user&a=login" id="main-menu4">
           Login
         </a>
       </li>
+      -->
       <li>
         <a href="index.php?c=user&a=add" id="main-menu4">
           Sign-up

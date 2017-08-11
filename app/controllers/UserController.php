@@ -64,19 +64,6 @@ class UserController extends BaseController
 		$this->redirect('index.php?c=user&a=list&pag=1');
 	}
 
-	public function loginAction()
-	{
-		$user = $this->_model->findByEmail('email', $_GET['email']);
-		if(isset($_POST['loginUser'])){
-			if($this->_model->login($_POST['loginUser'])){
-				Mess::setMess('success', 'Login cu succes!');
-				$this->redirect('index.php?c=article&a=list&pag=1');				
-			}		
-		}
-
-		$this->render('login', array('user' => $user));
-	}
-
 
 
 	public function pagAction()
@@ -133,5 +120,7 @@ class UserController extends BaseController
 		echo '<a class="btnpag" href="'.$base_url.($pag+1).'">NEXT</a>';
 		}
 	}
+
+
 
 }

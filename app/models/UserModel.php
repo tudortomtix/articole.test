@@ -115,26 +115,12 @@ class UserModel extends BaseModel
     }
 
 
-// Login user
-    public function loginUser($id, $post)
-    {           
-        if(!$this->validate($post)){            
-            return false;           
-        }
-
-        $select = 'email = :email, password = :password';
-        $sql = $this->pdo->prepare("SELECT $select FROM user WHERE email = :email");
-
-        return $sql->execute(array(
-            ':email' => $post['email'],
-            ':password' => $post['password']));
-             
-    }
-
 // Paginare useri
     public function pagUser() 
     {
         return $this->pdo->query('SELECT * FROM user'); 
     }
+
+
 
  }
