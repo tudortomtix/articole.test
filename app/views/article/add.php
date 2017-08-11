@@ -17,7 +17,7 @@
     </div>
     <div>
         <label>Incarca PhotoCover: </label>
-        <input type="file" name="fileToUpload" id="fileToUpload" class="fileupload">
+        <input type="file" name="fileToUpload" id="fileToUpload" class="fileupload" required>
          <select name="addArticle[category_id]" id="addArticle[category_id]" class="select">
             <option selected disabled>Alege categoria</option>
             <option value="1">Stiinta</option>
