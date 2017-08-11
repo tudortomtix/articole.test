@@ -44,7 +44,7 @@ switch ($_SERVER['SERVER_NAME']){
             'host' => 'localhost',      
             'name' => 'articole_test',
             'username' => 'root',       
-            'password' => '7ca60ce5950723e0a56c27e3452f7403edeabf5642b507a3',
+            'password' => '/////',
             'options' => array(
                 PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION   
             )
